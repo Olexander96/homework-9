@@ -5,6 +5,17 @@
   line-height: 1;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   padding: 22.5px 10px;
   max-height: 80px;
@@ -61,7 +72,6 @@ main .container .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 81px;
   margin-bottom: 20px;
 }
 
@@ -226,6 +236,7 @@ main .container .title {
     justify-content: flex-start;
   }
   main {
+    min-height: calc(100vh - 273px);
     padding: 100px 0;
   }
   main .container {
